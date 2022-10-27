@@ -1,4 +1,3 @@
-import { useState } from "react";
 import MyLink from "../MyLink/MyLink";
 
 import myImg from "../../assets/img1.jpg";
@@ -6,6 +5,7 @@ import slack from "../../assets/slack.png";
 import github from "../../assets/github.png";
 
 const Home = () => {
+  // This is to hide the slack name
   const hidden = true;
   return (
     <div className="app">
