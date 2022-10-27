@@ -6,7 +6,7 @@ import slack from "../../assets/slack.png";
 import github from "../../assets/github.png";
 
 const Home = () => {
-  const [hidden, setHidden] = useState(true);
+  const hidden = true;
   return (
     <div className="app">
       <div className="profile">
