@@ -1,4 +1,5 @@
 # HNG Linktree
+![image](https://user-images.githubusercontent.com/104495751/198291418-eaeb602a-1ac0-4d2c-8b44-0d22fa753b28.png)
 
 The app is a social media reference landing page of HNG organization.
 
