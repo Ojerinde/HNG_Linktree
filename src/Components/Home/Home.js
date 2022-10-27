@@ -13,28 +13,28 @@ const Home = () => {
         <figure className="profile__img--box">
           <img id="profile__img" src={myImg} alt="OjerindeJoel" />
         </figure>
-        <p id="twitter">Joel_Ojerinde</p>
-        <p id="slack">{hidden ? "" : "Ojerinde Joel"}</p>
+        <p id="twitter">@Joel_Ojerinde</p>
+        <p id="slack">{hidden ? "" : "JoelOjerinde"}</p>
         <div className="profile__links">
           <MyLink id="twitter__link" to="https://twitter.com/Joel_Ojerinde">
             Twitter
           </MyLink>
           <MyLink id="btn__zuri" to="https://training.zuri.team/">
-            Zuri Team
+            Get in touch with Zuri Team
           </MyLink>
           <MyLink
             id="books"
             to="http://books.zuri.team"
             title="Get detailed and self explanatory design and coding books here"
           >
-            Zuri Books
+            View Zuri Books
           </MyLink>
           <MyLink
             id="book__python"
             to="https://books.zuri.team/python-for-beginners?ref_id=victorojerinde"
             title="Get Python book for beginner"
           >
-            Python Books
+            View Python Books
           </MyLink>
           <MyLink
             id="pitch"
@@ -48,7 +48,7 @@ const Home = () => {
             to="https://books.zuri.team/design-rules"
             title="Get a design book for free before it is too late"
           >
-            Design Books
+            Get free Design Books
           </MyLink>
         </div>
         <div className="logo__box">
