@@ -1,0 +1,77 @@
+.app {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  border-bottom: 0.1rem solid $primary-light-color;
+
+  &__img--box {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  & p {
+    font-size: 1.8rem;
+    color: $secondary-light-color;
+    margin: 1.5rem 0;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+  }
+  &__links {
+    align-self: stretch;
+  }
+}
+
+.logo {
+  &__box {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__img {
+    height: 4rem;
+    height: 4rem;
+  }
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & h2 {
+    font-size: 2.3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+    & span {
+      font-size: 4rem;
+      color: red;
+    }
+  }
+
+  & p {
+    font-size: 1.5rem;
+  }
+  & img {
+    height: 4rem;
+    width: 17rem;
+  }
+}
