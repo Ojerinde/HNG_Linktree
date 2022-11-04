@@ -1,31 +1,21 @@
 .button {
-  padding: 0.4rem .8rem;
-  font-size: 1.4rem;
-  border-radius: 0.6rem;
-  color: rgba(91, 89, 89, 0.874);
+  padding: 0.7rem 0.9rem;
+  font-size: 1.7rem;
+  border-radius: 0.4rem;
+  color: $primary-color;
   border: none;
+  background: $secondary-color;
   cursor: pointer;
-  background: linear-gradient(
-    to bottom,
-    rgba($primary-light-color, 0.7),
-    rgba($primary-dark-color, 0.7)
-  );
-  transition: all .3s;
+  transition: all 0.3s;
 
   &:hover {
-    color: rgba(54, 54, 54);
-    background: linear-gradient(
-      to bottom,
-      rgba($primary-dark-color, 0.7),
-      rgba($primary-light-color, 0.7)
-    );
+    color: $secondary-color;
+    background-color: $primary-color;
+    transform: translateY(-.3rem);
   }
-  &:disabled {
-    cursor: not-allowed;
-    background: linear-gradient(
-    to bottom,
-    rgba($primary-light-color, 0.2),
-    rgba($primary-dark-color, 0.2)
-  );
+
+  &:active {
+    transform: translateY(-.1rem);
+    
   }
 }

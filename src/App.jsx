@@ -1,5 +1,4 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
-
 import { ErrorBoundary } from "react-error-boundary";
 
 import Home from "./pages/Home/Home";

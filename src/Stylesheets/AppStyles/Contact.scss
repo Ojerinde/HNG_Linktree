@@ -1,0 +1,101 @@
+.contact__page {
+  width: 100%;
+  margin-top: 4rem;
+  padding: 2rem 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & .form__box {
+    width: 55%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1000px) {
+      & {
+        width: 70%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      & {
+        width: 75%;
+      }
+    }
+
+    @media only screen and (max-width: 450px) {
+      & {
+        width: 95%;
+      }
+    }
+
+    & h1 {
+      font-size: 2.7rem;
+      letter-spacing: 0.2rem;
+      color: $secondary-color;
+    }
+
+    & p {
+      font-size: 1.7rem;
+      letter-spacing: 0.1rem;
+      color: $secondary-light-color;
+      margin: 2rem 0;
+    }
+
+    & .contact__form {
+      margin-top: 4rem;
+
+      &--box {
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (max-width: 800px) {
+          & {
+            flex-direction: column;
+          }
+        }
+
+        & div {
+          flex-basis: 45%;
+        }
+      }
+
+      & button {
+        width: 100%;
+        background-color: rgb(67, 103, 248);
+        color: white;
+        border: 0.1rem solid transparent;
+        transition: all 0.3s;
+        margin: 2rem 0 4rem;
+
+        &:hover {
+          background-color: white;
+          color: rgb(67, 103, 248);
+          border: 0.1rem solid rgb(67, 103, 248);
+        }
+      }
+    }
+  }
+}
+.checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    @media only screen and (max-width: 800px) {
+        & {
+            align-items: flex-start;
+        }
+      }
+
+  & label {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: $secondary-light-color;
+    letter-spacing: .1rem;
+  }
+}
+.contact__footer {
+  width: 100%;
+  margin: 3rem auto;
+}

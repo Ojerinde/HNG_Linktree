@@ -1,0 +1,40 @@
+
+.footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 0.1rem solid $primary-light-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h2 {
+      font-size: 2.3rem;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+  
+      & span {
+        font-size: 4rem;
+        color: red;
+      }
+    }
+  
+    & p {
+      font-size: 1.5rem;
+      color: $secondary-light-color;
+      word-spacing: .1rem;
+    }
+    & img {
+      height: 4rem;
+      width: 17rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      & p {
+        margin: 1.5rem 0;
+      }
+    }
+  }
+  

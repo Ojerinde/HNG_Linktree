@@ -37,7 +37,7 @@ const Links = () => {
       >
         Get free Design Books
       </MyLink>
-      <MyLink id="contact" to="/contact">
+      <MyLink id="contact" to="/contact" target=''>
         Contact me
       </MyLink>
     </div>

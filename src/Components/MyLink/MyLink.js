@@ -4,7 +4,7 @@ const MyLink = (props) => {
       href={props.to}
       id={props.id}
       title={props.title}
-      target="_blank"
+      target={!props.target ? `${props.target}` : "_blank"}
       rel="noreferrer"
     >
       {props.children}

@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className="footer">
+    <footer className={`${props.className} footer`}>
       <h2>
         Zuri<span>.</span>Internship
       </h2>
@@ -9,7 +9,7 @@ const Footer = () => {
         src="https://i0.wp.com/ingressive.org/wp-content/uploads/2020/05/I4G-Logo-Color-Cropped.png?fit=2225%2C539&ssl=1"
         alt="HNG"
       />
-    </div>
+    </footer>
   );
 };
 export default Footer;
