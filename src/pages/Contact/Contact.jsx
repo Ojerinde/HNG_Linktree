@@ -53,8 +53,8 @@ const Contact = () => {
           />
 
           <div className="checkbox">
-            <input type="checkbox" name="checkbox" value="value" />
-            <label>
+            <input type="checkbox" name="checkbox" value="value" id="checkbox"/>
+            <label htmlFor="checkbox">
               You agree to provide your data to Hng who may contact you.
             </label>
           </div>
