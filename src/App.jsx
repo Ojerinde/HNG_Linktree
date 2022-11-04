@@ -1,7 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
+
 import { ErrorBoundary } from "react-error-boundary";
 
-import Home from "./Components/Home/Home";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
 
 // This is the function that will be called whenever the eroor boundary catches an error in the application
 const ErrorFallback = (props) => {
@@ -24,7 +26,10 @@ const App = () => {
           navigate("/");
         }}
       >
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </ErrorBoundary>
     </>
   );
