@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MyLink from "../MyLink/MyLink";
 
 const Links = () => {
@@ -37,9 +38,9 @@ const Links = () => {
       >
         Get free Design Books
       </MyLink>
-      <MyLink id="contact" to="/contact" target=''>
+      <Link id="contact" to="/contact" target="">
         Contact me
-      </MyLink>
+      </Link>
     </div>
   );
 };
