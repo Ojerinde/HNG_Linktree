@@ -72,7 +72,7 @@ const Form = (props) => {
       return { ...prev, message: e.target.value };
     });
 
-    if (form.message.length >= 0) {
+    if (form.message.length > 0) {
       setForm((prev) => {
         return { ...prev, messageIsValid: true };
       });
@@ -85,7 +85,7 @@ const Form = (props) => {
     const { emailIsValid, lastNameIsValid, firstNameIsValid, messageIsValid } =
       form;
 
-    if ((emailIsValid, lastNameIsValid, firstNameIsValid, messageIsValid)) {
+    if (emailIsValid && lastNameIsValid && firstNameIsValid && messageIsValid) {
       setForm((prev) => {
         return { ...prev, formIsValid: true };
       });
@@ -133,7 +133,9 @@ const Form = (props) => {
             id="first_name"
             label="First Name"
             type="text"
-            invalid={!form.firstNameIsValid && form.firstNameIsFocus ? "invalid" : ""}
+            invalid={
+              !form.firstNameIsValid && form.firstNameIsFocus ? "invalid" : ""
+            }
             placeholder="Enter your first name"
             value={form.firstName}
             onChange={firstNameOnChangeHandler}
@@ -150,7 +152,9 @@ const Form = (props) => {
             id="last_name"
             label="Last Name"
             type="text"
-            invalid={!form.lastNameIsValid &&form.lastNameIsFocus ? "invalid" : ""}
+            invalid={
+              !form.lastNameIsValid && form.lastNameIsFocus ? "invalid" : ""
+            }
             placeholder="Enter your last name"
             value={form.lastName}
             onChange={lastNameOnChangeHandler}
