@@ -2,20 +2,23 @@
   padding: 0.7rem 0.9rem;
   font-size: 1.7rem;
   border-radius: 0.4rem;
-  color: $primary-color;
-  border: none;
-  background: $secondary-color;
+  background-color: $btn-bg-color;
+  color: $btn-color;
+  border: 0.3rem solid transparent;
   cursor: pointer;
   transition: all 0.3s;
 
   &:hover {
-    color: $secondary-color;
-    background-color: $primary-color;
-    transform: translateY(-.3rem);
+    background-color: $btn-bg-dark-color;
   }
 
   &:active {
-    transform: translateY(-.1rem);
-    
+    background-color: $btn-bg-color;
+    border: 0.3rem solid rgba($btn-color, 0.5);
+  }
+
+  &:disabled {
+    background-color: rgba($btn-bg-color, 0.5);
+    cursor: not-allowed;
   }
 }

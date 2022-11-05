@@ -1,17 +1,17 @@
 import React from "react";
 
-const Input = React.forwardRef((props, ref) => {
-  const { field = "input", ...others } = props;
+const Input = (props) => {
+  const { field = "input", invalid = "", ...others } = props;
 
   return (
     <div className={`${props.className} input__group`}>
       <label>{props.label}</label>
       {field === "input" ? (
-        <input {...others} ref={ref}></input>
+        <input {...others} className={invalid ? "invalid" : ""}></input>
       ) : (
-        <textarea {...others} ref={ref}></textarea>
+        <textarea {...others} className={invalid ? "invalid" : ""}></textarea>
       )}
     </div>
   );
-});
+};
 export default Input;
