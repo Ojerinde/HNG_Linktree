@@ -65,8 +65,6 @@
   margin-bottom: 1rem;
 }
 
-
-
 .checkbox {
   display: flex;
   justify-content: left;
@@ -83,5 +81,11 @@
     font-size: 1.5rem;
     color: $secondary-light-color;
     letter-spacing: 0.1rem;
+  }
+
+  & input:hover {
+    outline: 0.3rem solid rgba($btn-bg-color, 0.2);
+    -moz-outline-radius: .3rem;
+    border: 0.15rem solid rgba($btn-bg-color, 0.5);
   }
 }
